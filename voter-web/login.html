@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <div class="part d-flex border ">
+            <div class="part1 col-5 h-100 text-center">
+
+                <div class="comm d-flex flex-column">
+                    <div class="span1">भारत निर्वाचन आयोग</div>
+                    <div class="span1">Election Commission of India</div>
+                </div>
+
+                <img src="./image/logo.adf400d986c44d75009c068688bad635.svg" alt="logo">
+            </div>
+
+            <div class="part2 w-50" >login
+
+                <div class="box m-auto rounded-3 border border-2 col-8 p-3">
+                    <div class="login-1 ">Login</div>
+                    <div class="sign-up">Do not have an account? <a class="text-decoration-none"  href="">Sign-UP</a></div>
+
+                    <div class="indian pt-1 d-flex justify-content-around">
+                        <a id="element-1" class="resident text-decoration-none text-dark" href="#" onclick="func1()" >Indian Resident Elector</a>
+
+                        <a id="element-2" onclick="func2()" class=" overseas text-decoration-none text-dark" href="#">Indian Overseas Elector</a>
+                    </div>
+                    
+                    <div class="register pt-3">Registered mobile no./Email ID/EPIC no <span class="star" >*</span> 
+                    <div class="pt-2"><input onclick="func3()" id="input1" type="text " placeholder="Enter Registerd mobile no " class="w-100 p-1"></div>
+
+                    <span id="required"></span>
+                </div>
+                    
+
+                    <div class="password pt-2">Password <span class="star"> *</span> </div>
+                    <div class="pt-2"><input id="input2" onclick="func4()" type="text " placeholder="Enter Password" class="w-100 p-1">
+                        <span id="required2"></span>
+                    </div>
+                
+                    <div class="forgot  text-capitalize pt-2" align="end" >
+                        <a href=""class="text-decoration-none">forgot password</a>
+                    </div>
+                
+                    <div class="image">
+                        <img class="img1 w-50" src="./image/WhatsApp Image 2023-12-27 at 15.12.52_0a372a66.jpg" alt="captcha">
+
+                        <img class="w-25 rotate" src="./image/WhatsApp Image 2023-12-27 at 15.12.54_a238d1e6.jpg" alt="sound and refresh">
+                    </div>
+
+                    <div class="captcha1 pt-3">
+                        <div class="cap h5">Captcha <span class="star"> *</span></div>
+                        <div class="enter-captcha">
+                            <input id="cap1" type="text" class="p-1" name=""  autocomplete="off"  placeholder="Enter Captcha ">
+                            <div id="filled">
+                                <!-- fill  -->
+                            </div>
+                        </div>
+
+                        <div class="request pt-3">
+                            <button type="button" id="button"  onclick="caps()" class="btn btn-primary btn-block w-100 "> Request OTP</button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+            
+        
+            function func2 (){
+                let str1 = document.getElementById("element-2").setAttribute("style", "border-bottom:2px solid blue");
+
+                let str = document.getElementById("element-1").setAttribute("style","border-bottom:2px solid grey");
+            }
+
+            function func1 (){
+                let str1 = document.getElementById("element-1").setAttribute("style", "border-bottom:2px solid blue");
+
+                let str = document.getElementById("element-2").setAttribute("style","border-bottom:2px solid grey");
+            }
+           
+            
+           function func3 (){
+            let str2 = document.getElementById("input1").value;
+            // console.log(str2);
+
+            if(str2.length == 0){
+                document.getElementById("required").setAttribute("style", "color:red");
+                document.getElementById("required").innerHTML = "This filed is required";
+            }
+           }
+
+           function func4 (){
+            let str3 = document.getElementById("input2").value;
+            console.log(str3);
+
+            if(str3.length == 0){
+                document.getElementById("required2").setAttribute("style", "color:red");
+                document.getElementById("required2").innerHTML = "This filed is required";
+            }
+           }
+
+           function caps (){
+            let var1 = document.getElementById("cap1").value;
+            // console.log(var1);
+
+            if(var1 == "i7nugf"){
+                document.getElementById("filled").innerHTML = "";
+
+              window.open("form6.html", "_self");
+            }
+            else{
+                document.getElementById("filled").innerHTML = "Captcha Not Match";
+
+                document.getElementById("filled").setAttribute("style", "color:red");
+            }
+
+           }
+            
+
+    
+    </script>
+</body>
+</html>
