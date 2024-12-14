@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Times New Roman", Times, serif;
+    font-size:18px;
+}
+
+.part{
+    height: 650px;
+}
+
+.part1 img{
+   
+    width: 150px; 
+}
+.span1{
+    color:white;
+}
+
+.comm{
+    padding-top: 220px;
+}
+
+.part1{
+    background-color: rgba(32, 32, 182, 0.962);
+}
+
+.part2{
+    margin: 0 auto;
+}
+
+.login-1{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#element-1{
+    border-bottom: 2px solid blue;
+    width:100%;
+}
+
+#element-2{
+    border-bottom: 2px solid grey;
+    width:100%;
+}
+
+.star{
+    color:rgb(255, 11, 11);
+}
+
+.cap{
+    color:grey;
+}
+
+/* ************************** form6*********************************************** */
+
+.logo-bar{
+    color:white;
+    font-family:monospace;
+    font-size: 16px;
+}
+
+.logo-bar img{
+    height:70px;
+}
+
+.jump{
+    font-size:15px;
+}
+
+.column{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.grey{
+    border:3px solid rgb(200, 197, 197);
+}
+
+.dark-grey{
+    border-right:1px solid rgb(200, 197, 197);
+}
+
+.dark-black{
+    border:1.5px solid black;
+}
+.check{
+    width:20px; 
+    height:20px;
+}
+
+#check1{
+    opacity: 0;
+}
+
+.popins{
+    font-family:'poppins', sans-serif;
+}
+
+.light-blue{
+    background-color: #b5e2ff;
+}
+
+.small-text{
+    font-size: 15px;;
+}
+
+.font-weight{
+    font-weight: 600;
+}
+
+.box-width{
+    width:250px;
+}
+
+.dropdown-menu{
+    height:300px;
+    overflow-y:scroll;
+    width:250px;
+}
