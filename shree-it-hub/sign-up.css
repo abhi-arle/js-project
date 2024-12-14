@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,rgb(13, 160, 125)0%,rgb(17, 148, 45)35%,rgba(0,212,255,1)100%);
+
+    font-family: 'poppins', sans-serif;
+}
+
+.border-bottom2{
+    /* border-bottom: 2px solid grey; */
+    border: none;
+    border-bottom: 2px solid grey;
+    
+}
+
+.sign-up{
+    padding-top: 100px;
+}
+form{
+    width:24%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    
+}
+
+.form-control{
+    
+    box-shadow: none !important;
+}
+
+.btn-primary{
+    width:100%;
+    border: none;
+    border-radius:50px ;
+    background: linear-gradient(90deg,rgb(13, 160, 125)0%,rgb(17, 148, 45)35%,rgba(0,212,255,1)100%);
+    ;
+}
